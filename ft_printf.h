@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jimenapastranajessel <jimenapastranajes    +#+  +:+       +#+        */
+/*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 16:17:47 by jimenapastr       #+#    #+#             */
-/*   Updated: 2024/02/15 16:20:16 by jimenapastr      ###   ########.fr       */
+/*   Updated: 2024/03/01 16:20:34 by jpastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,16 @@
 
 #include <stdarg.h>
 #include <stdint.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 //#include "./libft/libft.h"
 
-int ft_printf(const char *s, ...);
+int	ft_printf(const char *s, ...);
+int	ft_putchar(char c);
+int	ft_putnbr(long nbr, int base, int upperC);
+int	ft_putptr(unsigned long long ptr);
+int	ft_putstr(char *s);
 
 #endif

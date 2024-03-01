@@ -6,18 +6,21 @@
 #    By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/29 14:40:18 by jpastran          #+#    #+#              #
-#    Updated: 2024/02/29 15:25:48 by jpastran         ###   ########.fr        #
+#    Updated: 2024/03/01 16:22:52 by jpastran         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC := clang
+CC := cc
 FLAGS := -Wall -Wextra -Werror
 RM := rm -f
 
 NAME := libftprintf.a
 
 SRCS := ft_printf.c \
-		ft_putptr.c
+		ft_putchar.c \
+		ft_putnbr.c \
+		ft_putptr.c \
+		ft_putstr.c \
 
 OBJS := $(SRCS:.c=.o)
 

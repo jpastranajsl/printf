@@ -6,13 +6,13 @@
 /*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 16:08:33 by jpastran          #+#    #+#             */
-/*   Updated: 2024/02/29 16:10:29 by jpastran         ###   ########.fr       */
+/*   Updated: 2024/03/01 16:09:50 by jpastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-	return(write(1, &c, 1));
+	return (write(1, &c, 1));
 }
