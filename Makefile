@@ -6,7 +6,7 @@
 #    By: jimenapastranajessel <jimenapastranajes    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/29 14:40:18 by jpastran          #+#    #+#              #
-#    Updated: 2024/03/08 17:21:43 by jimenapastr      ###   ########.fr        #
+#    Updated: 2024/03/08 17:49:30 by jimenapastr      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS) $(LIBFT)
 
 .c.o:
-	$(CC) &(FLAGS) $(LIBFT_INC) -c $< -o $(<:.c=.o)
+	$(CC) $(FLAGS) $(LIBFT_INC) -c $< -o $(<:.c=.o)
 
 clean:
 	$(RM) $(NAME) $(OBJS)
