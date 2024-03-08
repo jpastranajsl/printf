@@ -25,25 +25,25 @@ SRCS := ft_printf.c \
 OBJS := $(SRCS:.c=.o)
 
 LIBFT = ../libft.a
-LIBFT_INC := -I./libft
-LIBFT_LINK := -L./libft -lft
+LIBFT_INC := -I../libft
+LIBFT_LINK := -L../libft -lft
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	make -C libft
+	make -C ../libft
 	ar -rcs $(NAME) $(OBJS) $(LIBFT)
 
 .c.o:
-	$(CC) $(FLAGS) $(LIBFT_INC) -c $< -o $(<:.c=.o)
+	$(CC) $(FLAGS) $(LIBFT_INC) -c $< -o $@
 
 clean:
 	$(RM) $(NAME) $(OBJS)
-	make -C libft clean
+	make -C ../libft clean
 
 fclean: clean
 	$(RM) $(NAME)
-	make -C libft fclean
+	make -C ../libft fclean
 
 re: fclean all
 
