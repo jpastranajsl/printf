@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
+/*   By: jimenapastranajessel <jimenapastranajes    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 16:57:46 by jpastran          #+#    #+#             */
-/*   Updated: 2024/03/01 16:12:52 by jpastran         ###   ########.fr       */
+/*   Updated: 2024/03/08 20:04:20 by jimenapastr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "libft.hs"
 
 int	ft_putstr(char *s)
 {
