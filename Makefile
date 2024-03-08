@@ -24,7 +24,7 @@ SRCS := ft_printf.c \
 
 OBJS := $(SRCS:.c=.o)
 
-LIBFT = ../../libft.a
+LIBFT = ../libft.a
 LIBFT_INC := -I./libft
 LIBFT_LINK := -L./libft -lft
 
