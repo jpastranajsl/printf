@@ -6,19 +6,19 @@
 /*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 16:17:47 by jimenapastr       #+#    #+#             */
-/*   Updated: 2024/03/01 16:20:34 by jpastran         ###   ########.fr       */
+/*   Updated: 2024/03/19 13:18:07 by jpastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+# define FT_PRINTF_H
 
-#include <stdarg.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+# include <stdarg.h>
+# include <stdint.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <string.h>
 //#include "./libft/libft.h"
 
 int	ft_printf(const char *s, ...);

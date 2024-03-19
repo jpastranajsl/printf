@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jimenapastranajessel <jimenapastranajes    +#+  +:+       +#+         #
+#    By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/29 14:40:18 by jpastran          #+#    #+#              #
-#    Updated: 2024/03/08 17:49:30 by jimenapastr      ###   ########.fr        #
+#    Updated: 2024/03/19 13:43:54 by jpastran         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,26 +24,19 @@ SRCS := ft_printf.c \
 
 OBJS := $(SRCS:.c=.o)
 
-LIBFT = ../libft.a
-LIBFT_INC := -I../libft
-LIBFT_LINK := -L../libft -lft
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	make -C ../libft
-	ar -rcs $(NAME) $(OBJS) $(LIBFT)
+	ar -rcs $(NAME) $(OBJS)
 
 .c.o:
-	$(CC) $(FLAGS) $(LIBFT_INC) -c $< -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(NAME) $(OBJS)
-	make -C ../libft clean
 
 fclean: clean
 	$(RM) $(NAME)
-	make -C ../libft fclean
 
 re: fclean all
 
