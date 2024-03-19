@@ -6,7 +6,7 @@
 /*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 16:09:14 by jimenapastr       #+#    #+#             */
-/*   Updated: 2024/03/19 14:25:42 by jpastran         ###   ########.fr       */
+/*   Updated: 2024/03/19 14:40:17 by jpastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_paramtype(va_list args, char c)
 	else if (c == 's')
 		size = ft_putstr(va_arg(args, char *));
 	else if (c == 'p')
-		size += ft_putptr(va_arg(args, unsigned long long));
+		size += ft_putptr(va_arg(args, uintptr_t));
 	else if (c == 'i' || c == 'd')
 		size = ft_putnbr(va_arg(args, int), 10, 0);
 	else if (c == 'u')
