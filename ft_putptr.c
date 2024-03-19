@@ -6,7 +6,7 @@
 /*   By: jpastran <jpastran@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 15:32:02 by jimenapastr       #+#    #+#             */
-/*   Updated: 2024/03/01 16:12:21 by jpastran         ###   ########.fr       */
+/*   Updated: 2024/03/19 14:18:54 by jpastran         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	ft_putptr(unsigned long long ptr)
 	}
 	else
 	{
-		result += ft_putstr("x0");
+		result += ft_putstr("0x");
 		result += ft_getptr(ptr);
 	}
 	return (result);
